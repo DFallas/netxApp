@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 export default function Course({course}){
     return (
         <div>
-            {course.title}
+            {course && course.title}
         </div>
     )
 }
