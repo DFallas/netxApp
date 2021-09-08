@@ -10,7 +10,10 @@ export default function Navbar(props) {
                     <a href="/courses/2">Static PreRendering!</a> 
                 </li>
                 <li className={styles.navTitle}>
-                    <a href="/login">Server Side Rendering!</a> 
+                    <a href="/courses/client">Client Rendering!</a> 
+                </li>
+                <li className={styles.navTitle}>
+                    <a href="/courses">Server Side Rendering!</a> 
                 </li>
             </ul>
         </nav>
