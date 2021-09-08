@@ -7,6 +7,7 @@ export default function Layout({ children }) {
     return (
         <>
         <Head>
+        <meta name="google-site-verification" content="B4Dr1GhgKYEceGHmcMHA_gVAjord2O4a3HIDpeBnHLk" />
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
