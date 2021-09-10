@@ -19,17 +19,18 @@ export default function Courses ({ albuns }){
     return(
         <>
             <h1> Course {name} </h1>
-            {albuns2.length > 0 && (
-                <h1> {albuns2[0].Description}</h1>
-            )
+            {
+                albuns2.length > 0 && (
+                    <h1> {albuns2[0].Description}</h1>
+                )
             }
-             {albuns.length > 0 && (
+             {
+             albuns.length > 0 && (
                  albuns.map((albun, index)=>{
                     return <h3 key={index}> {albun.Description}</h3>
                  })   
-            )
+                )
             }
-            
         </>
 
     )

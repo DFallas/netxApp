@@ -20,10 +20,13 @@ export default function Courses ({ albuns }){
     return(
         <>
             <h1> Course {name} </h1>
+            <h1>Client side render</h1>
             {albuns2.length > 0 && (
-                <h1> {albuns2[0].Description}</h1>
+                
+                <h2> {albuns2[0].Description}</h2>
             )
             }
+              <h1>Server side render</h1>
              { albuns2.length  > 0 && (
                  albuns2.map((albun, index)=>{
                     return (<h3 key={index}> {albun.description}</h3>)
