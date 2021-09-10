@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavBar(props) {
+export default function NavBar2(props) {
   const classes = useStyles();
   const preventDefault = (event) => event.preventDefault();
   const router = useRouter()
@@ -59,7 +59,7 @@ export default function NavBar(props) {
     </div>
   );
 }
-export  function Navbar2(props) {
+export  function Navbar(props) {
     return(
         <nav className={props.className}>
             <ul>
