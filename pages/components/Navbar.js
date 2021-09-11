@@ -8,11 +8,29 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import styles from './layout.module.scss'
 import { useRouter } from 'next/dist/client/router';
-import { RouterOutlined } from '@material-ui/icons';
+
 import Link from 'next/link'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    display: 'flex',
+    '&.main':{
+        width: '100%',
+        justifyContent: 'center',
+        borderBottom: '1px solid #00000014'
+    },
+
+    'ul':{
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent: 'space-around',
+        flexWrap: 'nowrap',
+        flexDirection: 'row',
+       ' > li':{
+            margin: '0.5rem 5rem',
+            display: 'inline-block'
+        }
+    } 
   },
   menuButton: {
     marginRight: theme.spacing(2),

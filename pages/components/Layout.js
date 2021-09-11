@@ -1,9 +1,11 @@
 import styles from './layout.module.scss'
-import Navbar from "./Navbar"
+import Navbar from './Navbar'
 import Footer from './Footer'
 import Head from 'next/head'
 import { Container, Grid } from '@material-ui/core'
-import { grid } from '@material-ui/system'
+import { ThemeProvider } from "@material-ui/styles";
+import { theme } from "../theme";
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default function Layout({ children }) {
     return (
@@ -18,7 +20,9 @@ export default function Layout({ children }) {
                 content="minimum-scale=1, initial-scale=1, width=device-width"
                 />
         </Head>
+        <ThemeProvider theme={theme}>
         <main className={styles.container}>
+        <CssBaseline />
         <Container maxWidth="xl" disableGutters>
             <Grid container direction="column">
                     <Navbar className="main" />
@@ -36,6 +40,7 @@ export default function Layout({ children }) {
 
         <Footer />
         </main>
+        </ThemeProvider>
         </>
     );
   }
