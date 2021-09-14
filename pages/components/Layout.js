@@ -4,7 +4,7 @@ import Footer from './Footer'
 import Head from 'next/head'
 import { Container, Grid } from '@material-ui/core'
 import { ThemeProvider } from "@material-ui/styles";
-import { theme } from "../theme";
+import theme  from "../theme";
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default function Layout({ children }) {

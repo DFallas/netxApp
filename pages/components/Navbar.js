@@ -46,7 +46,6 @@ export default function NavBar2(props) {
   const router = useRouter()
     const redirect = (url)=> router.push(url)
   return (
-    <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -74,7 +73,6 @@ export default function NavBar2(props) {
             <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-    </div>
   );
 }
 export  function Navbar(props) {
@@ -95,6 +93,5 @@ export  function Navbar(props) {
                 </li>
             </ul>
         </nav>
-
     )
 }
